@@ -1,0 +1,23 @@
+server:
+  port: 9000
+  error:
+    include-binding-errors: always
+    include-message: always
+spring:
+  application:
+    name: banking_cards
+  datasource:
+    password: password
+    url: jdbc:postgresql://localhost:5432/cards
+    username: michael
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+    show-sql: true
+
+
+

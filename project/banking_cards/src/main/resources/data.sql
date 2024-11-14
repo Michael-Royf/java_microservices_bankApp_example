@@ -1,0 +1,2 @@
+-- INSERT INTO cards (mobile_number, card_number, card_type, total_limit, amount_used, available_amount, created_by)
+-- VALUES ('1234567890', '1234-5678-9012-3456', 'VISA', 10000, 2000, 8000, 'admin');

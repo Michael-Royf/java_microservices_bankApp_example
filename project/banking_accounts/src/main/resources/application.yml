@@ -1,0 +1,20 @@
+server:
+  port: 8080
+  error:
+    include-binding-errors: always
+    include-message: always
+spring:
+  application:
+    name: banking_accounts
+  datasource:
+    password: password
+    url: jdbc:postgresql://localhost:5432/accounts
+    username: michael
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+    show-sql: true
